@@ -66,7 +66,9 @@ public class DriverTest {
         capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_DURATION, "80000");
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 0);
-        capabilities.setCapability(MobileCapabilityType.APP, appPath);
+//        capabilities.setCapability(MobileCapabilityType.APP, appPath);
+        capabilities.setCapability("androidPackage","com.android.dialer");
+        capabilities.setCapability("appActivity","DialtactsActivity");
         //   capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, ".LoginActivity.*");
         capabilities.setCapability("ignoreUnimportantViews", true);
         capabilities.setCapability("disableAndroidWatchers", true);
